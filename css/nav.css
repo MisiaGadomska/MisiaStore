@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: pink;
+    z-index: 9;
+}
+
+.nav{
+  padding: 10px 10vx;  
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo{
+    height: 95px;
+    width: 200px;
+    margin-left: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+    size: 35px;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+    margin-right: 50px; 
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    background: none;
+    color: purple;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+color: gray;
+}
+
+.nav-items a{
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-items a img{
+    width: 30px;
+    cursor: pointer;
+    size: 1.5cm;
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vx;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+.login-logout-popup{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    top: 40px;
+    width: 200px;
+    transition: .5s;
+    border: 2px solid black;
+}
+
+.login-logout-popup::after{
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .account-info{
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  #user-btn{
+    padding: 10px;
+    background: #383838;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
+  .hide{
+    opacity: 0;
+    pointer-events: none;
+  }

@@ -1,0 +1,95 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vx;
+    padding-bottom: 80px;
+    background: black;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 190px;
+    margin-top: 60px;
+    margin-left: 90px;
+
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.footer-link:hover{
+    color: pink;
+}
+
+.footer-title, .info {
+    color: rgb(250, 219, 224);
+    margin: 20px 0;
+    text-transform: capitalize;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-title{
+    margin-top: 80px;
+    color: whitesmoke;
+    margin-left: 55px;
+}
+
+.footer-social-cointainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link{
+    color: aliceblue;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.social-link:nth-child(1){
+    margin-left: 80px;
+}
+
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: black;
+    background: pink;
+}
